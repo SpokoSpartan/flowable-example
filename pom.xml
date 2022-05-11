@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.6.7</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>com.spot.on</groupId>
 	<artifactId>flowable</artifactId>
@@ -15,11 +15,53 @@
 	<description>Demo project for Spring Boot and Flowable</description>
 	<properties>
 		<java.version>11</java.version>
+		<flowable.version>6.7.2</flowable.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<!-- required module - Flowable engine -->
+		<dependency>
+			<groupId>org.flowable</groupId>
+			<artifactId>flowable-spring-boot-starter</artifactId>
+			<version>${flowable.version}</version>
+		</dependency>
+
+		<!-- required module while using web - landing page / accounts management -->
+		<dependency>
+			<groupId>org.flowable</groupId>
+			<artifactId>flowable-spring-boot-starter-ui-idm</artifactId>
+			<version>${flowable.version}</version>
+		</dependency>
+
+		<!-- optional module - view with running processes -->
+		<dependency>
+			<groupId>org.flowable</groupId>
+			<artifactId>flowable-spring-boot-starter-ui-task</artifactId>
+			<version>${flowable.version}</version>
+		</dependency>
+
+		<!-- optional module - Flowable admin (endpoints configuration) -->
+		<dependency>
+			<groupId>org.flowable</groupId>
+			<artifactId>flowable-spring-boot-starter-ui-admin</artifactId>
+			<version>${flowable.version}</version>
+		</dependency>
+
+		<!-- optional module - modeler -->
+		<dependency>
+			<groupId>org.flowable</groupId>
+			<artifactId>flowable-spring-boot-starter-ui-modeler</artifactId>
+			<version>${flowable.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>2.1.212</version>
 		</dependency>
 
 		<dependency>
