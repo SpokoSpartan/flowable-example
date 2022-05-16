@@ -11,6 +11,7 @@
 
     <modules>
         <module>flowable-core</module>
+        <module>flowable-adapter</module>
     </modules>
 
 </project>
