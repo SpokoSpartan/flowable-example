@@ -1,0 +1,45 @@
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" id="definition_efce04b7-d46e-11ec-a495-024277f25d58" name="ProductTax" namespace="http://www.flowable.org/dmn" exporter="Flowable Open Source Modeler" exporterVersion="6.7.2">
+  <decision id="ProductTax" name="ProductTax">
+    <decisionTable id="decisionTable_265213d1-2ed8-42dd-b18e-8dd1f4ab3208" hitPolicy="FIRST">
+      <input label="ProductCategory">
+        <inputExpression id="inputExpression_ae3aa07e-f5c4-48ea-a705-d29ab499f09d" typeRef="string">
+          <text>ProductCategory</text>
+        </inputExpression>
+      </input>
+      <output id="outputExpression_beef5336-64af-4d6a-9f12-7742e12253df" label="ProductsTax" name="ProductsTax" typeRef="number"></output>
+      <rule>
+        <inputEntry id="inputEntry_ae3aa07e-f5c4-48ea-a705-d29ab499f09d_1">
+          <text><![CDATA[== "DRINK"]]></text>
+        </inputEntry>
+        <outputEntry id="outputEntry_beef5336-64af-4d6a-9f12-7742e12253df_1">
+          <text><![CDATA[5]]></text>
+        </outputEntry>
+      </rule>
+      <rule>
+        <inputEntry id="inputEntry_ae3aa07e-f5c4-48ea-a705-d29ab499f09d_2">
+          <text><![CDATA[== "FOOD"]]></text>
+        </inputEntry>
+        <outputEntry id="outputEntry_beef5336-64af-4d6a-9f12-7742e12253df_2">
+          <text><![CDATA[23]]></text>
+        </outputEntry>
+      </rule>
+      <rule>
+        <inputEntry id="inputEntry_ae3aa07e-f5c4-48ea-a705-d29ab499f09d_3">
+          <text><![CDATA[== "ALCOHOL"]]></text>
+        </inputEntry>
+        <outputEntry id="outputEntry_beef5336-64af-4d6a-9f12-7742e12253df_3">
+          <text><![CDATA[50]]></text>
+        </outputEntry>
+      </rule>
+      <rule>
+        <inputEntry id="inputEntry_ae3aa07e-f5c4-48ea-a705-d29ab499f09d_4">
+          <text><![CDATA[-]]></text>
+        </inputEntry>
+        <outputEntry id="outputEntry_beef5336-64af-4d6a-9f12-7742e12253df_4">
+          <text><![CDATA[0]]></text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI></dmndi:DMNDI>
+</definitions>
