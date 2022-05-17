@@ -23,6 +23,19 @@
 		</dependency>
 
 		<dependency>
+			<groupId>com.xti.flowable</groupId>
+			<artifactId>flowable-externalworker-client-spring-boot-starter</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -37,5 +50,12 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<repositories>
+		<repository>
+			<id>io.cloudrepo.xti.opensource</id>
+			<url>https://maven.xt-i.cloud/public/repositories/opensource/</url>
+		</repository>
+	</repositories>
 
 </project>

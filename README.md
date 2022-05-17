@@ -18,3 +18,9 @@ The following view should be visible after successful authentication:
 
 ![alt text](images/flowable_start_page.png)
 
+
+
+
+## Materials
+* Delegates/Workers doc can be found [here](https://github.com/flowable/flowable-engine/blob/main/docs/docusaurus/docs/bpmn/ch07b-BPMN-Constructs.md#external-worker-task)
+* [flowable-external-worker-spring-boot-starter](https://www.xt-i.com/blog/flowable-external-worker-spring-boot-starter)

@@ -58,6 +58,13 @@
 			<version>${flowable.version}</version>
 		</dependency>
 
+		<!-- REST API (e.g. for the external worker)-->
+		<dependency>
+			<groupId>org.flowable</groupId>
+			<artifactId>flowable-spring-boot-starter-process-rest</artifactId>
+			<version>${flowable.version}</version>
+		</dependency>
+
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
